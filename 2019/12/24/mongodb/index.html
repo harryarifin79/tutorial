@@ -15,7 +15,7 @@
 <meta property="og:description" content="How to Install a MongoDB Sharded Cluster on CentOS 7Sharding is a MongoDB process to store data-set across different machines. It allows you to do a horizontal scale of data, partition data across ind">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2019-12-24T05:35:54.669Z">
-<meta property="article:modified_time" content="2019-12-24T10:15:04.407Z">
+<meta property="article:modified_time" content="2019-12-24T10:30:57.204Z">
 <meta property="article:author" content="Harry">
 <meta property="article:tag" content="MongoDB">
 <meta name="twitter:card" content="summary">
@@ -182,12 +182,12 @@
 <h5 id="Add-Mongos-Member"><a href="#Add-Mongos-Member" class="headerlink" title="Add Mongos Member"></a><strong>Add Mongos Member</strong></h5><p><strong>Configure mongos/Query Router</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mongo --port 27017</span><br><span class="line"></span><br><span class="line">sh.addShard( &quot;rs1&#x2F;192.168.88.100:27019,192.168.88.101:27019,192.168.88.102:27019&quot;)</span><br><span class="line">sh.addShard( &quot;rs1&#x2F;192.168.88.100:27020,192.168.88.101:27020,192.168.88.102:27020&quot;)</span><br><span class="line">sh.status()</span><br></pre></td></tr></table></figure>
 <p>MongoDB sharded cluster on CentOS 7 successfully installed and deployed.</p>
-<p>reff</p>
+<p>reff<br><a href="https://www.howtoforge.com/tutorial/install-a-mongodb-sharded-cluster-on-centos-7/" target="_blank" rel="noopener">Howtoforge</a><br><a href="https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/" target="_blank" rel="noopener">MongoDB</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://tutorial.getmedik.co.id/2019/12/24/mongodb/" data-id="ck4jpszm20001c8jw8zjg1a4a" class="article-share-link">Share</a>
+      <a data-url="http://tutorial.getmedik.co.id/2019/12/24/mongodb/" data-id="ck4jqcvx00000igjw9tnn9zkq" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MongoDB/" rel="tag">MongoDB</a></li></ul>
@@ -196,16 +196,6 @@
   </div>
   
     
-<nav id="article-nav">
-  
-  
-    <a href="/2019/12/24/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
-    </a>
-  
-</nav>
-
   
 </article>
 
@@ -253,10 +243,6 @@
         
           <li>
             <a href="/2019/12/24/mongodb/">Install MongoDB Cluster</a>
-          </li>
-        
-          <li>
-            <a href="/2019/12/24/hello-world/">Hello World</a>
           </li>
         
       </ul>
