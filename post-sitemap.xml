@@ -8,8 +8,8 @@
     </url>
 
     <url>
-        <loc>https://tutorial.getmedik.co.id/install-zimbra/</loc>
-        <lastmod>2020-01-06T07:23:17.223Z</lastmod>
+        <loc>https://tutorial.getmedik.co.id/install-ops-manager/</loc>
+        <lastmod>2020-01-08T05:50:39.091Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +17,15 @@
 
     <url>
         <loc>https://tutorial.getmedik.co.id/install-mongodb-cluster/</loc>
-        <lastmod>2020-01-06T07:23:14.909Z</lastmod>
+        <lastmod>2020-01-06T07:35:26.293Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tutorial.getmedik.co.id/install-zimbra/</loc>
+        <lastmod>2020-01-06T07:35:19.794Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
