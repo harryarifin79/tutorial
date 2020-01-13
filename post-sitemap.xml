@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://tutorial.getmedik.co.id/HowTo-create-SPF-DMARC-and-DKIM/</loc>
+        <lastmod>2020-01-13T09:59:06.993Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://tutorial.getmedik.co.id/install-ops-manager/</loc>
         <lastmod>2020-01-08T05:50:39.091Z</lastmod>
         <changefreq>weekly</changefreq>
