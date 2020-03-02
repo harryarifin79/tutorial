@@ -8,8 +8,24 @@
     </url>
 
     <url>
-        <loc>https://tutorial.getmedik.co.id/HowTo-create-SPF-DMARC-and-DKIM/</loc>
-        <lastmod>2020-01-13T09:59:06.993Z</lastmod>
+        <loc>https://tutorial.getmedik.co.id/install-mongodb-cluster/</loc>
+        <lastmod>2020-03-02T05:49:37.435Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tutorial.getmedik.co.id/Cara-install-fail2ban-zimbra/</loc>
+        <lastmod>2020-03-02T04:53:02.229Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tutorial.getmedik.co.id/zimbra-command/</loc>
+        <lastmod>2020-03-02T04:38:44.399Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,15 +33,7 @@
 
     <url>
         <loc>https://tutorial.getmedik.co.id/install-ops-manager/</loc>
-        <lastmod>2020-01-08T05:50:39.091Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://tutorial.getmedik.co.id/install-mongodb-cluster/</loc>
-        <lastmod>2020-01-06T07:35:26.293Z</lastmod>
+        <lastmod>2020-03-02T04:37:16.238Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -33,7 +41,15 @@
 
     <url>
         <loc>https://tutorial.getmedik.co.id/install-zimbra/</loc>
-        <lastmod>2020-01-06T07:35:19.794Z</lastmod>
+        <lastmod>2020-03-02T04:37:11.653Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tutorial.getmedik.co.id/HowTo-create-SPF-DMARC-and-DKIM/</loc>
+        <lastmod>2020-03-02T04:35:08.239Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
