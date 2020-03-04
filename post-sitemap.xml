@@ -8,16 +8,48 @@
     </url>
 
     <url>
-        <loc>https://tutorial.getmedik.co.id/install-mongodb-cluster/</loc>
-        <lastmod>2020-03-02T05:49:37.435Z</lastmod>
+        <loc>https://tutorial.getmedik.co.id/cara-menggunakan-fitur-forgot-password/</loc>
+        <lastmod>2020-03-04T05:57:29.075Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://tutorial.getmedik.co.id/Cara-install-fail2ban-zimbra/</loc>
-        <lastmod>2020-03-02T04:53:02.229Z</lastmod>
+        <loc>https://tutorial.getmedik.co.id/mengatasi-link-forgot-password-tidak-muncul-pada-login-screen-zimbra/</loc>
+        <lastmod>2020-03-04T05:57:07.568Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tutorial.getmedik.co.id/howTo-create-SPF-DMARC-and-DKIM/</loc>
+        <lastmod>2020-03-04T04:46:21.169Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tutorial.getmedik.co.id/how-to-install-fail2ban-zimbra/</loc>
+        <lastmod>2020-03-04T04:46:12.097Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tutorial.getmedik.co.id/how-to-activate-forgot-password/</loc>
+        <lastmod>2020-03-03T08:43:30.973Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tutorial.getmedik.co.id/install-mongodb-cluster/</loc>
+        <lastmod>2020-03-02T05:49:37.435Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -42,14 +74,6 @@
     <url>
         <loc>https://tutorial.getmedik.co.id/install-zimbra/</loc>
         <lastmod>2020-03-02T04:37:11.653Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://tutorial.getmedik.co.id/HowTo-create-SPF-DMARC-and-DKIM/</loc>
-        <lastmod>2020-03-02T04:35:08.239Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
