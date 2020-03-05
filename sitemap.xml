@@ -4,7 +4,12 @@
 
     <sitemap>
         <loc>https://tutorial.getmedik.co.id/post-sitemap.xml</loc>
-        <lastmod>2020-03-04T05:57:29.075Z</lastmod>
+        <lastmod>2020-03-05T11:01:58.399Z</lastmod>
+    </sitemap>
+
+    <sitemap>
+        <loc>https://tutorial.getmedik.co.id/page-sitemap.xml</loc>
+        <lastmod>2020-03-05T10:44:16.058Z</lastmod>
     </sitemap>
 
 </sitemapindex>
