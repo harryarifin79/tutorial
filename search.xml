@@ -4,6 +4,131 @@
   
     
     <entry>
+      <title>TUTORIAL GITHUB</title>
+      <link href="/tutorial_github/"/>
+      <url>/tutorial_github/</url>
+      
+        <content type="html"><![CDATA[<a id="more"></a><ul><li><p>untuk memasukkan data github ke pc</p><blockquote><p>git clone ( link to repo without brackets )<br>contoh : git clone <a href="https://github.com/zz/xx.git" target="_blank" rel="external nofollow noopener noreferrer">https://github.com/zz/xx.git</a></p></blockquote></li><li><p>untuk update data local dari github ( masuk ke dalam folder )</p><blockquote><p>git pull</p></blockquote></li><li><p>untuk mengembalikan file yang terhapus dari folder</p><blockquote><p>git reset –hard</p></blockquote></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> HowTo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Centos </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Harddisk tidak terbaca saat install centos 7</title>
+      <link href="/solusi_HDD_tidak_tampil_saat_install_centos_7/"/>
+      <url>/solusi_HDD_tidak_tampil_saat_install_centos_7/</url>
+      
+        <content type="html"><![CDATA[<p>Mulai RHEL / Centos 7, Driver untuk kontroller CCISS, the P400, P400i, E200i dll, tidak termasuk dalam system. Ketika install Centos 7 di HP server lawas hdd(Array) kontroller tidak akan terdeteksi. Agar kontroller dapat terdeteksi gunakan cara berikut.</p><a id="more"></a><p><strong><em>Installing Centos 7 / RedHat RHEL on an HP ML350 G5, DL360 G5 w / CCISS Raid Controllers</em></strong></p><p>Pada saat install centos 7,tekan TAB pada saat install option.</p><p><a href="https://imgur.com/FhTFosC" target="_blank" rel="external nofollow noopener noreferrer"><img src="https://i.imgur.com/FhTFosC.jpg" title="source: imgur.com"></a></p><p>dan tambahkan perintah berikut:</p><blockquote><p>hpsa.hpsa_simple_mode=1 hpsa.hpsa_allow_any=1</p></blockquote><hr><p>Setelah install centos 7 selesai dan di reboot,<br>tekan ‘e’ pada saat grub screen<br><a href="https://imgur.com/L8AGtPQ" target="_blank" rel="external nofollow noopener noreferrer"><img src="https://i.imgur.com/L8AGtPQ.jpg" title="source: imgur.com"></a></p><hr><p>tambahkan perintah berikut agar server HP dapat booting di harddisk secara permanen :</p><blockquote><p>hpsa.hpsa_simple_mode=1 hpsa.hpsa_allow_any=1</p></blockquote><p>hasilnya seperti gambar :<br><a href="https://imgur.com/toECLbx" target="_blank" rel="external nofollow noopener noreferrer"><img src="https://i.imgur.com/toECLbx.jpg" title="source: imgur.com"></a></p><hr><p>setelah login buka file dengan perintah berikut :</p><figure class="highlight plain"><figcaption><span>/etc/default/grub```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">file nya seharusnya kelihatan seperti berikut:</span><br></pre></td></tr></table></figure><p>GRUB_TIMEOUT=5<br>GRUB_DEFAULT=saved<br>GRUB_DISABLE_SUBMENU=true<br>GRUB_TERMINAL_OUTPUT=”console”<br>GRUB_CMDLINE_LINUX=”rd.lvm.lv=centos/root rd.lvm.lv=centos/swap crashkernel=auto rhgb quiet hpsa.hpsa_simple_mode=1 hpsa.hpsa_allow_any=1”<br>GRUB_DISABLE_RECOVERY=”true”</p><p>```</p><p>lalu jalankan perintah berikut :</p><blockquote><p>grub2-mkconfig -o /boot/grub2/grub.cfg</p></blockquote><hr><p><a href="http://www.vassox.com/linux-general/installing-centos7-on-an-hp-ml350-g5/" target="_blank" rel="external nofollow noopener noreferrer">source</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> HowTo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Centos </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>install SNMP di Centos</title>
+      <link href="/install_SNMP_Centos6/"/>
+      <url>/install_SNMP_Centos6/</url>
+      
+        <content type="html"><![CDATA[<p><strong><em>Install SNMP</em></strong></p><p>Install SNMPD service dengan perintah berikut :</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;yum install net-snmp net-snmp-utils</span><br></pre></td></tr></table></figure><p>Setelah terinstall, verifikasi service akan jalan saat startup :</p><h4 id="CentOS-6"><a href="#CentOS-6" class="headerlink" title="CentOS 6:"></a>CentOS 6:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;chkconfig snmpd on</span><br></pre></td></tr></table></figure><h4 id="CentOS-7"><a href="#CentOS-7" class="headerlink" title="CentOS 7:"></a>CentOS 7:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;systemctl enable snmpd</span><br></pre></td></tr></table></figure><h4 id="Konfigurasi-SNMP"><a href="#Konfigurasi-SNMP" class="headerlink" title="Konfigurasi SNMP"></a>Konfigurasi SNMP</h4><p>Buat sebuah backup snmpd.conf dengan perintah berikut :</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;mv &#x2F;etc&#x2F;snmp&#x2F;snmpd.conf &#x2F;etc&#x2F;snmp&#x2F;snmpd.conf.orig</span><br></pre></td></tr></table></figure><p>Buat file konfigurasi baru dengan perintah :</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;touch &#x2F;etc&#x2F;snmp&#x2F;snmpd.conf</span><br></pre></td></tr></table></figure><p>Isi dari file tersebut :</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rocommunity nama_community</span><br><span class="line">syslocation “alamat”</span><br><span class="line">syscontact kontak_email</span><br></pre></td></tr></table></figure><p>Simpan file konfigurasi dan restart service SNMPD dengan perintah berikut<br>CentOS 6:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;service snmpd restart</span><br></pre></td></tr></table></figure><p>CentOS 7:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;systemctl restart snmpd</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> HowTo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Centos </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SSH COPY ID</title>
+      <link href="/copy_ssh_id/"/>
+      <url>/copy_ssh_id/</url>
+      
+        <content type="html"><![CDATA[<p>Berguna untuk remote SSH tanpa perlu Insert password, sebab password sudah tersimpan.</p><a id="more"></a><p>Hasilkan SSH key<br>Dengan OpenSSH, SSH key dibuat menggunakan ssh-keygen. Dalam bentuk yang paling sederhana, jalankan ssh-keygen dan jawab pertanyaannya. Seperti berikut :</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"># ssh-keygen</span><br><span class="line">Generating public&#x2F;private rsa key pair.</span><br><span class="line">Enter file in which to save the key (&#x2F;home&#x2F;ylo&#x2F;.ssh&#x2F;id_rsa): mykey</span><br><span class="line">Enter passphrase (empty for no passphrase): </span><br><span class="line">Enter same passphrase again: </span><br><span class="line">Your identification has been saved in mykey.</span><br><span class="line">Your public key has been saved in mykey.pub.</span><br><span class="line">The key fingerprint is:</span><br><span class="line">SHA256:GKW7yzA1J1qkr1Cr9MhUwAbHbF2NrIPEgZXeOUOz3Us ylo@klar</span><br><span class="line">The key&#39;s randomart image is:</span><br><span class="line">+---[RSA 2048]----+</span><br><span class="line">|.*++ o.o.        |</span><br><span class="line">|.+B + oo.        |</span><br><span class="line">| +++ *+.         |</span><br><span class="line">| .o.Oo.+E        |</span><br><span class="line">|    ++B.S.       |</span><br><span class="line">|   o * &#x3D;.        |</span><br><span class="line">|  + &#x3D; o          |</span><br><span class="line">| + &#x3D; &#x3D; .         |</span><br><span class="line">|  + o o          |</span><br><span class="line">+----[SHA256]-----+</span><br><span class="line">#</span><br></pre></td></tr></table></figure><p>Membuat pasangan kunci ( kunci publik dan kunci pribadi ) hanya membutuhkan satu menit. File-file kunci biasanya disimpan di direktori ~ / .ssh.</p><p><strong><em>Copy the key to a server</em></strong><br>Setelah SSH key dibuat, perintah ssh-copy-id dapat digunakan untuk menginstalnya sebagai kunci resmi di server. Setelah kunci disahkan untuk SSH, kunci itu memberikan akses ke server tanpa kata sandi.</p><p>Gunakan perintah berikut untuk copy SSH key:</p><blockquote><p>ssh-copy-id -i ~/.ssh/mykey user@host</p></blockquote><p>Hanya public key yang disalin ke server. private key tidak boleh disalin ke komputer lain.</p><p>Test key nya<br>setelah key nya di copy, ada baiknya di test :</p><blockquote><p>ssh -i ~/.ssh/mykey user@host</p></blockquote><p>sekarang login seharusnya tidak menanyakan password.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> HowTo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Centos </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>COPY FILE DARI SERVER LAIN MENGGUNAKAN SCP</title>
+      <link href="/copy_file_menggunakan_scp/"/>
+      <url>/copy_file_menggunakan_scp/</url>
+      
+        <content type="html"><![CDATA[<p>Pada dasarnya, SCP merupakan gabungan dari RCP dan SSH (secure Shell). SCP mengandalkan RCP untuk melakukan penyalinan file, dan SSH untuk mengenkripsi informasi dan mengautentikasi sistem remote.</p><a id="more"></a><p>Tidak seperti Rsync, untuk menggunakan perintah SCP, Anda hanya perlu membuat username dan password atau passphrase bagi sistem yang berperan dalam proses pemindahan file. Cara ini mempermudah proses pemindahan karena Anda tidak perlu login untuk melakukannya.</p><blockquote><p>scp [other options] [source username@IP]:/[directory and file name] [destination username@IP]:/[destination directory]</p></blockquote><h2 id="Keterangan"><a href="#Keterangan" class="headerlink" title="Keterangan :"></a><em>Keterangan :</em></h2><ul><li><p><strong>[other options]</strong> merupakan modifier yang dapat ditambahkan ke perintah SCP. Untuk modifier yang paling sering digunakan, akan kami bahas kemudian.</p></li><li><p><strong>[source username@IP]</strong> merupakan username dan IP perangkat yang memuat file yang Anda inginkan. IPnya akan terlihat seperti: <a href="mailto:root@123.123.123.12" target="_blank" rel="external nofollow noopener noreferrer">root@123.123.123.12</a></p></li><li><p><strong>:/</strong> mengirimkan informasi ke perintah SCP bahwa Anda akan menambahkan sesuatu pada source directory.</p></li><li><p><strong>[directory and file name]</strong> merujuk pada lokasi penyimpanan dan nama file tersebut. Modifier ini akan terlihat seperti: /user/home/Desktop/SCP.png</p></li><li><p><strong>[destination username@IP]</strong> adalah username dan IP dari perangkat yang dituju.</p></li><li><p><strong>[destination directory]</strong> merupakan direktori tujuan di mana file tersebut akan disimpan.</p></li></ul><p><strong><em>contoh :</em></strong><br>menggunakan -p port 22 yang terbuka</p><figure class="highlight plain"><figcaption><span>-p 22 root@162.168.1.1:/media/scp.png root@162.168.1.2:/desktop/destination```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">atau menggunakan -r ( secara rekursif ):</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;scp -r root@162.168.1.1:&#x2F;media&#x2F;scp.png edward@162.168.1.2:&#x2F;desktop&#x2F;destination</span><br></pre></td></tr></table></figure><p><a href="https://www.hostinger.co.id/tutorial/scp-linux/" target="_blank" rel="external nofollow noopener noreferrer">source</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> HowTo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Centos </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Mengatasi Link Forgot Password Zimbra Yang Tidak Muncul</title>
       <link href="/mengatasi-link-forgot-password-tidak-muncul-pada-login-screen-zimbra/"/>
       <url>/mengatasi-link-forgot-password-tidak-muncul-pada-login-screen-zimbra/</url>

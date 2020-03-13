@@ -8,6 +8,54 @@
     </url>
 
     <url>
+        <loc>https://tutorial.getmedik.co.id/tutorial_github/</loc>
+        <lastmod>2020-03-13T10:10:30.225Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tutorial.getmedik.co.id/solusi_HDD_tidak_tampil_saat_install_centos_7/</loc>
+        <lastmod>2020-03-13T10:10:13.557Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tutorial.getmedik.co.id/copy_ssh_id/</loc>
+        <lastmod>2020-03-13T10:06:52.854Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tutorial.getmedik.co.id/copy_file_menggunakan_scp/</loc>
+        <lastmod>2020-03-13T10:06:49.123Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tutorial.getmedik.co.id/install_SNMP_Centos6/</loc>
+        <lastmod>2020-03-13T10:05:59.323Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://tutorial.getmedik.co.id/how-to-activate-forgot-password/</loc>
+        <lastmod>2020-03-05T12:08:50.503Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://tutorial.getmedik.co.id/membuat-SPF-DMARC-dan-DKIM/</loc>
         <lastmod>2020-03-05T11:34:49.631Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -58,14 +106,6 @@
     <url>
         <loc>https://tutorial.getmedik.co.id/install-mongodb-cluster/</loc>
         <lastmod>2020-03-05T10:46:38.682Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://tutorial.getmedik.co.id/how-to-activate-forgot-password/</loc>
-        <lastmod>2020-03-05T10:30:43.497Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
